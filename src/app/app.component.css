@@ -1,0 +1,93 @@
+.header {
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-align: center;
+}
+
+
+ .game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  min-width: 400px;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 200px;
+  padding-top: 15px;
+  margin: 15vh auto 0;
+  background-color: #FFF;
+  border-radius: 6px;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+}
+
+ .add-equation {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.answer-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.result-input{
+  border: none;
+  border-bottom: 2px solid #CCC;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 14px;
+  width: 60%;
+}
+ .result-input:focus {
+  outline: none;
+}
+
+.wrong-ans-alert {
+  background-color: mistyrose;
+  border: 1px solid red;
+  border-radius: 3px;
+  padding: 10px;
+  color: red;
+  font-weight: 600;
+}
+
+
+#submit-btn {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  color: #FFF;
+  background-color: #9245daba;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+#submit-btn.active-btn {
+  background-color: #9245da;
+  transition: .3s;
+}
+
+#submit-btn.active-btn:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+}
+
+
+.answer-average {
+  background-color: #EEE;
+  padding: 18px;
+  text-align: center;
+  width: fit-content;
+  margin: 10vh auto;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: capitalize;
+}
